@@ -1,15 +1,31 @@
-import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { Menu, MenuButton, MenuList, MenuItem, Text } from "@chakra-ui/react";
 
-export const Links = () => {
+export const MenuUI = () => {
   return (
-    <>
-      <Link to="/">About Me</Link>
-
-      <Link to="/experience">Experience</Link>
-
-      <Link to="/tech-stack">Tech Stack</Link>
-
-      <Link to="/education">Education</Link>
-    </>
+    <Menu isLazy>
+      <MenuButton>
+        <Text fontSize="24" fontFamily="heading">
+          menu
+        </Text>
+      </MenuButton>
+      <MenuList>
+        <MenuItem>
+          <Link to="/">About Me</Link>
+        </MenuItem>
+        <MenuItem>
+          <Link to="/projects">Projects</Link>
+        </MenuItem>
+        <MenuItem>
+          <Link to="/tech-stack">Tech Stack</Link>
+        </MenuItem>
+        <MenuItem>
+          <Link to="/education">Education</Link>
+        </MenuItem>
+        <MenuItem>
+          <Link to="/hobby">Hobby</Link>
+        </MenuItem>
+      </MenuList>
+    </Menu>
   );
 };
