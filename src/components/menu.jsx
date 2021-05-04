@@ -1,5 +1,5 @@
+import { Menu, MenuButton, MenuItem, MenuList, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import { Menu, MenuButton, MenuList, MenuItem, Text } from "@chakra-ui/react";
 
 export const MenuUI = () => {
   return (
@@ -10,21 +10,18 @@ export const MenuUI = () => {
         </Text>
       </MenuButton>
       <MenuList>
-        <MenuItem>
-          <Link to="/">About Me</Link>
-        </MenuItem>
-        <MenuItem>
-          <Link to="/projects">Projects</Link>
-        </MenuItem>
-        <MenuItem>
-          <Link to="/tech-stack">Tech Stack</Link>
-        </MenuItem>
-        <MenuItem>
-          <Link to="/education">Education</Link>
-        </MenuItem>
-        <MenuItem>
-          <Link to="/hobby">Hobby</Link>
-        </MenuItem>
+        <Link to="/">
+          <MenuItem>About Me</MenuItem>
+        </Link>
+        <Link to="/projects">
+          <MenuItem>Projects</MenuItem>
+        </Link>
+        <Link to="/tech-stack">
+          <MenuItem>Tech Stack</MenuItem>
+        </Link>
+        <Link to="/hobby">
+          <MenuItem>Hobby</MenuItem>
+        </Link>
       </MenuList>
     </Menu>
   );

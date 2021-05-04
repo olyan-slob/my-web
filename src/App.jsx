@@ -7,7 +7,6 @@ import { Header } from "./components/header";
 import { AboutMePage } from "./pages/about-me";
 import { ProjectsPage } from "./pages/projects";
 import { TechStackPage } from "./pages/tech-stack";
-import { EducationPage } from "./pages/education";
 import { HobbyPage } from "./pages/hobby";
 import theme from "./theme";
 
@@ -16,7 +15,7 @@ function App() {
     <ChakraProvider theme={theme}>
       <Router>
         <Header />
-        <Switch>
+        <Switch zIndex="2">
           <Route exact path="/">
             <AboutMePage />
           </Route>
@@ -25,9 +24,6 @@ function App() {
           </Route>
           <Route path="/tech-stack">
             <TechStackPage />
-          </Route>
-          <Route exact path="/education">
-            <EducationPage />
           </Route>
           <Route path="/hobby">
             <HobbyPage />
