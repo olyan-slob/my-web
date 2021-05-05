@@ -1,10 +1,14 @@
 import { Flex, Text } from "@chakra-ui/react";
+import { Helmet } from "react-helmet";
 import { BubbleLayout } from "../components/bubble-layout";
 import { Heading } from "../components/heading";
 
 export const TechStackPage = () => {
   return (
     <Flex flexDir="column" alignItems="center">
+      <Helmet>
+        <title>Tech Stack</title>
+      </Helmet>
       <Heading headingName="Tech Stack"></Heading>
       <BubbleLayout>
         <Text fontSize="large" zIndex="2" mt="20" mb="4">

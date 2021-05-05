@@ -1,5 +1,6 @@
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Flex, Link, Text } from "@chakra-ui/react";
+import { Helmet } from "react-helmet";
 import { Link as RouterLink } from "react-router-dom";
 import { BubbleLayout } from "../components/bubble-layout";
 import { Heading } from "../components/heading";
@@ -7,6 +8,9 @@ import { Heading } from "../components/heading";
 export const AboutMePage = () => {
   return (
     <Flex flexDir="column" alignItems="center">
+      <Helmet>
+        <title>About Me</title>
+      </Helmet>
       <Heading headingName="About Me" />
       <Text mb="2" fontSize="2xl">
         Olga Slobodchuk

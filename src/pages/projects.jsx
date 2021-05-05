@@ -1,9 +1,13 @@
 import { AspectRatio, Divider, Flex, Text } from "@chakra-ui/react";
+import { Helmet } from "react-helmet";
 import { Heading } from "../components/heading";
 
 export const ProjectsPage = () => {
   return (
     <Flex flexDir="column" alignItems="center">
+      <Helmet>
+        <title>Projects</title>
+      </Helmet>
       <Heading headingName="Projects" />
       <Divider borderWidth="0,75px" borderColor="black" opacity="1" w="50%" />
       <Text fontSize="34" mt="10">

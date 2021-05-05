@@ -3,6 +3,7 @@ import { Box, Divider, Flex, Image, Link, Text } from "@chakra-ui/react";
 import AwesomeSlider from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
 import "react-awesome-slider/dist/styles.css";
+import { Helmet } from "react-helmet";
 import { Heading } from "../components/heading";
 import Images from "../images";
 
@@ -11,6 +12,9 @@ const AutoplaySlider = withAutoplay(AwesomeSlider);
 export const HobbyPage = () => {
   return (
     <Flex flexDir="column" alignItems="center">
+      <Helmet>
+        <title>Hobby</title>
+      </Helmet>
       <Heading headingName="Hobby" />
       <Divider borderWidth="0,75px" borderColor="black" opacity="1" w="50%" />
       <Text fontSize="34" mt="10">
