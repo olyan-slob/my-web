@@ -8,7 +8,22 @@ export const ProjectsPage = () => {
       <Helmet>
         <title>Projects</title>
       </Helmet>
+
       <Heading headingName="Projects" />
+
+      <Divider borderWidth="0,75px" borderColor="black" opacity="1" w="50%" />
+      <Text fontSize="34">Idea Forum</Text>
+      <Text w="50%" mt="7">
+        Simple discussion website, where users can share their ideas and leave
+        comments. Written with Firebase, React, MaterialUI, react-router.
+      </Text>
+      <AspectRatio w="70%" ratio={10 / 7} my="10">
+        <iframe
+          src="https://test-task-live.web.app/"
+          title="Idea Forum"
+          allowFullScreen
+        />
+      </AspectRatio>
 
       <Divider borderWidth="0,75px" borderColor="black" opacity="1" w="50%" />
       <Text fontSize="34">Design</Text>
