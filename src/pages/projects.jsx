@@ -63,7 +63,7 @@ export const ProjectsPage = () => {
       </Text>
       <AspectRatio w="70%" ratio={10 / 4} my="10">
         <iframe
-          src="https://olyan-slob.github.io/upload-files/"
+          src="https://olyan-slob.github.io/js_firebase_file_uploader/"
           title="Monster Rolodex"
           allowFullScreen
         />
