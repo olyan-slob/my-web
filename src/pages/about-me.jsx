@@ -62,15 +62,6 @@ export const AboutMePage = () => {
           LinkedIn
           <ExternalLinkIcon mx="2px" />
         </Link>
-        <Link
-          zIndex="2"
-          mb="20"
-          href="https://app.enhancv.com/share/12ae3be6?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
-          isExternal
-        >
-          CV
-          <ExternalLinkIcon mx="2px" />
-        </Link>
       </BubbleLayout>
     </Flex>
   );
